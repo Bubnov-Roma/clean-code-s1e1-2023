@@ -56,6 +56,7 @@
 }
 
 .todo-list__item__input,
+.todo-list__item__new-input,
 .add-button,
 .todo-list__item__edit-button,
 .todo-list__item__delete-button {
@@ -95,7 +96,8 @@
    text-transform: uppercase;
 }
 
-.todo-list__item__input {
+.todo-list__item__input,
+.todo-list__item__new-input {
    margin: 0;
    font-size: 18px;
    line-height: 18px;
@@ -111,7 +113,8 @@
    flex-grow: 1;
 }
 
-.todo-list__item__input:focus {
+.todo-list__item__input:focus,
+.todo-list__item__new-input:focus {
    color: #333;
 }
 
@@ -138,9 +141,9 @@
    align-items: center;
 }
 
-.todo-list__item > * {
+/* .todo-list__item > * {
    vertical-align: middle;
-}
+} */
 
 .todo-list__item > .todo-list__item__checkbox {
    margin: 0 10px;
@@ -177,7 +180,8 @@
 
 /* Edit Task */
 
-.todo-list__item .todo-list__item__input {
+.todo-list__item__input,
+.input__none {
    display: none;
 }
 
