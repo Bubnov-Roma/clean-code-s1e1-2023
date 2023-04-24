@@ -177,7 +177,7 @@
 
 /* Edit Task */
 
-ul li .todo-list__item__input {
+.todo-list__item .todo-list__item__input {
    display: none;
 }
 
