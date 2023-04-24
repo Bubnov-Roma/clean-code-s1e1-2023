@@ -86,7 +86,6 @@ var editTask=function(){
 
     var editInput=listItem.querySelector("input[type=text]");
     var label=listItem.querySelector("label");
-    var listIitem=listItem.querySelector(".todo-list__item__input");
     var editBtn=listItem.querySelector(".todo-list__item__edit-button");
     var containsClass=listItem.classList.contains("todo-list__item_edit");
     //If class of the parent is .editmode
@@ -94,11 +93,11 @@ var editTask=function(){
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText=editInput.value;
-        // listIitem.classList.add("input__none");
+        editInput.classList.add("input__none");
         editBtn.innerText="Edit";
     } else {
         editInput.value=label.innerText;
-        // listIitem.classList.remove("input__none")
+        editInput.classList.remove("input__none")
         editBtn.innerText="Save";
     }
 
