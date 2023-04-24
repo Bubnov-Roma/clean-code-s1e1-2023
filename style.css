@@ -50,7 +50,8 @@
 }
 
 .todo-list__item, 
-.section-tetle {
+.todo-container__title,
+.completed-container__title {
    list-style: none;
 }
 
