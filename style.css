@@ -44,8 +44,7 @@
    display: flex;
 }
 
-.incompleteTasks,
-.completed-tasks {
+.todo-list {
    margin: 0;
    padding: 0px;
 }
